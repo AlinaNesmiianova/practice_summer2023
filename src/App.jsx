@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import {brightness} from "./utils";
 import './App.css';
 
 function App() {
