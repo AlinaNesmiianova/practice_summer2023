@@ -4,7 +4,7 @@ import Canvas from "./Canvas";
 import image from "./image.jpg";
 import image2 from "./image2.jpg"
 import{makeWB} from "./Black and white";
-import {inversionFilter} from "./utils"
+import {inversionFilter, brightness} from "./utils"
 
 function App() {
 const processImage = (imageData)=>{
@@ -12,7 +12,10 @@ const processImage = (imageData)=>{
 }
   const processImage2 = (imageData)=>{
     return inversionFilter(imageData)
-  } 
+  }
+  const processImage3 = (imageData)=>{
+    return brightness(imageData,5)
+  }
   return (
     <div className="App">
         <Canvas image ={image} processImage={processImage}/>
