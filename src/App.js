@@ -17,10 +17,22 @@ const processImage = (imageData)=>{
     return brightness(imageData,5)
   }
   return (
+    <>
+    <div className="Indent">
+        Черно-белый:
+    </div>
     <div className="App">
         <Canvas image ={image} processImage={processImage}/>
-        <Canvas image ={image2} processImage={processImage2}/>
+        
     </div>
+    <div className="Indent">
+        Инверсия:
+    </div>
+    <div className="App">
+      <Canvas image ={image2} processImage={processImage2}/>
+    
+    </div>
+    </>
   );
 }
 

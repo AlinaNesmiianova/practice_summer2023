@@ -1,7 +1,30 @@
 .App {
   text-align: center;
+  width: 1500px;
+  height: 1000px;
+  
+  border: 15px inset #cd30ab;
+  background: #eee; 
+  margin: auto;
+  padding: 150px 25px;
 }
-
+.Indent{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  
+  width: 1580px;
+  height: 80px;
+  
+  border: 0px solid #ffffff;
+  background: #eee; 
+  margin: auto;
+  padding: auto;
+}
+Canvas{
+  width: 100%;
+  height: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
