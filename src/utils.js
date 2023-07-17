@@ -17,3 +17,35 @@ export const brightness=(ImageData, value)=>{
     }
     return ImageData;
 }
+
+export const flipHorizontal = (imageData) => {
+    for (let row = 0; row < imageData.height; row++) {
+        for (let col = 0; col < imageData.width / 2; col++) {
+            const index = (row * imageData.width + col) * 4
+            const flippedCol = imageData.width - col - 1
+            const flippedIndex = (row * imageData.width + flippedCol) * 4
+            for (let i = 0; i < 4; i++) {
+                const temp = imageData.data[index + i]
+                imageData.data[index + i] = imageData.data[flippedIndex + i]
+                imageData.data[flippedIndex + i] = temp
+            }
+        }
+    }
+    return imageData
+}
+
+export const flipVertical = (imageData) => {
+    for (let row = 0; row < imageData.height / 2; row++) {
+        const flippedRow = imageData.height - row - 1
+        for (let col = 0; col < imageData.width; col++) {
+            const index = (row * imageData.width + col) * 4
+            const flippedIndex = (flippedRow * imageData.width + col) * 4
+            for (let i = 0; i < 4; i++) {
+                const temp = imageData.data[index + i]
+                imageData.data[index + i] = imageData.data[flippedIndex + i]
+                imageData.data[flippedIndex + i] = temp
+            }
+        }
+    }
+    return imageData
+}
