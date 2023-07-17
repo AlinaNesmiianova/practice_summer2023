@@ -25,37 +25,26 @@ Canvas{
   width: 100%;
   height: 100%;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #828cae;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .button:hover {background-color: #828cae}
+  
+  .button:active {
+  background-color: #828cae;
+  box-shadow: 0 5px #756b6b;
+  transform: translateY(4px);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
