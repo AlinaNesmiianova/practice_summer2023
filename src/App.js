@@ -2,7 +2,7 @@ import './App.css'
 import Canvas from "./Canvas"
 import image from "./image.jpg"
 import image2 from "./image2.jpg"
-import { makeWB } from "./Black and white"
+import { makeWB } from "./utils"
 import { inversionFilter, brightness } from "./utils"
 import { flipHorizontal, flipVertical } from "./utils"
 
